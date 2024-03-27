@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-10-29 17:37+0000\n"
+"PO-Revision-Date: 2024-01-25 16:37+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -24,6 +24,11 @@ msgid ""
 "A consumable product is a product for which stock is not managed.\n"
 "A service is a non-material product you provide."
 msgstr ""
+"Un prodotto stoccabile è un prodotto per il quale si gestiscono le giacenze. "
+"Deve essere installata l'app Magazzino.\n"
+"Un prodotto consumabile è un prodotto per il quale non sono gestite le "
+"giacenze.\n"
+"Un servizio è un prodotto non materiale che viene fornito."
 
 #. module: sale_stock_info_popup
 #. openerp-web
@@ -69,6 +74,14 @@ msgid ""
 "Otherwise, this includes goods stored in any Stock Location with 'internal' "
 "type."
 msgstr ""
+"Quantità previsionale (calcolata come quantità disponibile - quantità "
+"riservata) \n"
+"In un contesto con una sola ubicazione di magazzino, include i beni stoccati "
+"in questa ubicazione o qualsiasi delle sue figlie.\n"
+"In un contesto con un solo magazzino, include i beni stoccati "
+"nell'ubicazione di questo magazzino o qualsiasi delle figlie.\n"
+"Altrimenti, include i beni stoccati in qualsiasi ubicazione di tipo "
+"'interno'."
 
 #. module: sale_stock_info_popup
 #. openerp-web
@@ -80,7 +93,7 @@ msgstr "Giacenza prevista"
 #. module: sale_stock_info_popup
 #: model:ir.model.fields,field_description:sale_stock_info_popup.field_sale_order_line__free_qty_today
 msgid "Free Qty Today"
-msgstr "Q.tà Libera Oggi"
+msgstr "Q.tà libera oggi"
 
 #. module: sale_stock_info_popup
 #: model:ir.model.fields,field_description:sale_stock_info_popup.field_product_product__free_qty
@@ -91,18 +104,18 @@ msgstr "Quantità gratuita "
 #: code:addons/sale_stock_info_popup/models/product.py:48
 #, python-format
 msgid "Invalid domain operator %s"
-msgstr "Operatore dominio non valido %s"
+msgstr "Operatore dominio %s errato"
 
 #. module: sale_stock_info_popup
 #: code:addons/sale_stock_info_popup/models/product.py:50
 #, python-format
 msgid "Invalid domain right operand %s"
-msgstr ""
+msgstr "Operatore destro di dominio %s errato"
 
 #. module: sale_stock_info_popup
 #: model:ir.model.fields,field_description:sale_stock_info_popup.field_sale_order_line__is_mto
 msgid "Is Mto"
-msgstr "E' MTO"
+msgstr "È MTO"
 
 #. module: sale_stock_info_popup
 #: code:addons/sale_stock_info_popup/models/sale_order.py:104
@@ -145,7 +158,7 @@ msgstr "Riga ordine di vendita"
 #. module: sale_stock_info_popup
 #: model:ir.model.fields,field_description:sale_stock_info_popup.field_sale_order_line__scheduled_date
 msgid "Scheduled Date"
-msgstr "Data programmata"
+msgstr "Data schedulata"
 
 #. module: sale_stock_info_popup
 #. openerp-web
@@ -157,7 +170,7 @@ msgstr "Questo prodotto è riordinato su richiesta."
 #. module: sale_stock_info_popup
 #: model:ir.model.fields,field_description:sale_stock_info_popup.field_sale_order_line__virtual_available_at_date
 msgid "Virtual Available At Date"
-msgstr "Data Virtuale Disponibilità"
+msgstr "Teoricamente disponibile alla data"
 
 #. module: sale_stock_info_popup
 #: model:ir.model.fields,field_description:sale_stock_info_popup.field_sale_order_line__warehouse_id
